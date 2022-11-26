@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Energia</title>
+
+ 
+    <link rel="stylesheet" href="/stylesheet.css" type="text/css">
+
+</head>
+<body>
+    
+<div class="formcalculo">
+   
+    <h1>Calculo de Energia</h1>
+
+    <form>
+        <label for="potencia">Potência dos Equipamentos</label><br>
+        <input type=“text” name="potencia" id="potencia" placeholder="Potência em Watts"><br>
+
+        <label for="horasconsumo">Horas de consumo</label><br>
+        <input type=“text” name="consumo" id="horasconsumo" placeholder="Quantas horas ligado"><br>
+
+        <label for="custokwh">Custo da Enegia em KW/H</label><br>
+        <input type=“text” name="tarifa" id="tarifaenergia" placeholder="Informe a tarifa da sua energia"><br>
+
+        <button onclick="cliclouCalcular(event)">CALCULAR</button>
+    </form>
+
+    <h2 id="resultadocalculo"></h2> 
+
+</div>
+<script src="/calculo.js"></script>
+</body>
+</html>
